@@ -1,0 +1,7 @@
+/*
+// classes: photos	
+// ".photos-switch": { width: 52, height: 31, top: 12, backgroundImage: '/images/switch.png' }
+	".photos-handle": { width: 30, height: 31 }
+	".photos-handle-on":  { left: 22, image: '/images/switch-handle-on.png' }
+	".photos-handle-off": { left: 0,  image: '/images/switch-handle-off.png' }
+*/
