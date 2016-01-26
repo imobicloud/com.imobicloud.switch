@@ -33,14 +33,15 @@ function updateHandle(value) {
 	if (value == params.value) { return; }
 	params.value = value;
 	
-	var style = G.createStyle({ classes: params.classes + '-handle' + (value ? '-on' : '-off') });
-  	$.handle.animate({
-  		left: style.left,
+	var styles = G.createStyle({ classes: params.classes + '-handle' + (value ? '-on' : '-off') });
+  	$.container.children[0].animate({
+  		left: styles.left,
   		duration: 200
   	}, function() {
-  		$.handle.image = style.image;
-  		$.trigger('change', { value: params.value });
+  		$.container.children[0].applyProperties(styles);
   	});
+  	
+  	$.trigger('change', { value: value });
 }
 
 exports.setValue = updateHandle;
