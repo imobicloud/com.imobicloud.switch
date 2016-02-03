@@ -23,6 +23,6 @@ js
 	
 	$.switcher.getValue();
 	
-	$.switcher.getValue(false);
+	$.switcher.setValue(false);
 
 	$.switcher.unload();
